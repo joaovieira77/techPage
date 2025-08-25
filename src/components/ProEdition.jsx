@@ -5,7 +5,7 @@ const versions = [
     name: 'Aureon X4 Standard',
     price: '€749',
     description: 'Includes the SkyControl Lite remote controller. Enjoy intelligent tracking, 360° obstacle awareness, and 5K HDR video in a portable design, perfect for beginner and hobbyist pilots.',
-    image: 'rc.png',
+    image: '1.png',
     whatsIncluded: [
       'Aureon X4 Drone',
       'SkyControl Lite Remote Controller',
@@ -19,7 +19,7 @@ const versions = [
     name: 'Aureon X4 Pro',
     price: '€899',
     description: 'Comes with the SkyControl Pro remote controller featuring a built-in HD display. Fly smarter with all advanced features plus screen-on convenience for seamless control.',
-    image: 'rc2.png',
+    image: '2.png',
     whatsIncluded: [
       'Aureon X4 Drone',
       'SkyControl Pro Remote Controller',
@@ -32,12 +32,12 @@ const versions = [
   },
   {
     name: 'Aureon X4 Explorer Kit',
-    price: '€949',
+    price: '€999',
     description: 'The ultimate adventure bundle: extra batteries, propellers, charging hub, ND filters, and a travel-ready case. Perfect for extended flights and creative freedom.',
-    image: 'combo.png',
+    image: '3.png',
     whatsIncluded: [
       'Aureon X4 Drone',
-      'SkyControl Lite Remote Controller',
+      'SkyControl Pro Remote Controller',
       '4 Flight Batteries',
       'FastCharge Hub',
       'Spare Propellers (x6)',
@@ -49,8 +49,7 @@ const versions = [
   },
 ];
 
-
-export default function VersionsSlider({ theme = 'dark' }) {
+export default function VersionsCarousel({ theme = 'dark' }) {
   const [current, setCurrent] = useState(0);
   const next = () => setCurrent((current + 1) % versions.length);
   const prev = () => setCurrent((current - 1 + versions.length) % versions.length);
