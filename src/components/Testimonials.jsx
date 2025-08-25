@@ -28,13 +28,13 @@ const testimonials = [
   {
     name: 'Carla Mendes',
     title: 'Tech Reviewer',
-    img: '/face5.jpeg',
+    img: '/Face5.jpeg',
     review: 'Impressed by the long battery life and stable connection, even in windy conditions.'
   },
   {
     name: 'Stephen Brown',
     title: 'Filmmaker',
-    img: '/face.jpeg',
+    img: '/Face.jpeg',
     review: 'The drone\'s portability and ease of use make it my go-to for quick shoots.'
   },
 ];
