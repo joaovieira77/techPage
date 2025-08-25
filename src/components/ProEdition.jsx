@@ -2,27 +2,53 @@ import { useState } from 'react';
 
 const versions = [
   {
-    name: 'DJI Mini 4 Pro (RC-N2)',
-    price: '€809',
-    description: 'Includes the RC-N2 remote controller. Enjoy advanced features like omnidirectional obstacle sensing, ActiveTrack 360°, and 4K/60fps HDR video for professional-level creativity and safety.',
+    name: 'Aureon X4 Standard',
+    price: '€749',
+    description: 'Includes the SkyControl Lite remote controller. Enjoy intelligent tracking, 360° obstacle awareness, and 5K HDR video in a portable design, perfect for beginner and hobbyist pilots.',
     image: 'rc.png',
-    whatsIncluded: ['Drone', 'RC-N2 Remote Controller', 'Battery'],
+    whatsIncluded: [
+      'Aureon X4 Drone',
+      'SkyControl Lite Remote Controller',
+      '1 Flight Battery',
+      'Spare Propellers (x2)',
+      'FastCharge Adapter',
+      'Protective Carry Pouch'
+    ],
   },
   {
-    name: 'DJI Mini 4 Pro (RC2)',
-    price: '€1019',
-    description: 'Comes with the upgraded RC2 remote controller featuring a built-in screen. Experience all the advanced flight and camera features, plus enhanced convenience and control for seamless flying.',
+    name: 'Aureon X4 Pro',
+    price: '€899',
+    description: 'Comes with the SkyControl Pro remote controller featuring a built-in HD display. Fly smarter with all advanced features plus screen-on convenience for seamless control.',
     image: 'rc2.png',
-    whatsIncluded: ['Drone', 'RC2 Remote Controller', 'Battery'],
+    whatsIncluded: [
+      'Aureon X4 Drone',
+      'SkyControl Pro Remote Controller',
+      '2 Flight Batteries',
+      'Spare Propellers (x4)',
+      'USB-C Aureon QuickLink Cable',
+      'Sun Hood / Glare Shield for Controller',
+      'Premium Carry Pouch'
+    ],
   },
   {
-    name: 'Fly More Combo',
-    price: '€1149',
-    description: 'Get the complete package: extra batteries, propellers, charging hub, and a carrying case. Perfect for extended adventures and uninterrupted shooting sessions.',
+    name: 'Aureon X4 Explorer Kit',
+    price: '€949',
+    description: 'The ultimate adventure bundle: extra batteries, propellers, charging hub, ND filters, and a travel-ready case. Perfect for extended flights and creative freedom.',
     image: 'combo.png',
-    whatsIncluded: ['Drone', 'Remote Controller', '3 Batteries', 'Charging Hub', 'Carrying Case'],
+    whatsIncluded: [
+      'Aureon X4 Drone',
+      'SkyControl Lite Remote Controller',
+      '4 Flight Batteries',
+      'FastCharge Hub',
+      'Spare Propellers (x6)',
+      'Protective Propeller Guards',
+      'ND Filter Set (ND4/8/16)',
+      'Foldable Landing Pad',
+      'Premium Travel Case'
+    ],
   },
 ];
+
 
 export default function VersionsSlider({ theme = 'dark' }) {
   const [current, setCurrent] = useState(0);
@@ -65,7 +91,7 @@ export default function VersionsSlider({ theme = 'dark' }) {
         <div className="mb-4">
           <h4 className={`text-lg font-semibold mb-2 ${
             theme === 'dark' ? 'text-white' : 'text-gray-900'
-          }`}>What's Included</h4>
+          }`}>Your Aureon Kit</h4>
           <ul className={`list-disc list-inside text-left max-w-xs mx-auto ${
             theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
           }`}>

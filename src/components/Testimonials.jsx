@@ -5,39 +5,40 @@ const testimonials = [
     name: 'Michael Chen',
     title: 'Aerial Photographer',
     img: '/Face.1jpeg.jpeg',
-    review: 'The Mini 4\'s obstacle sensing and intelligent flight modes make capturing stunning aerial shots a breeze.'
+    review: "The Aureon X4's 360° FlightShield sensors and smooth flight modes make capturing cinematic aerial shots effortless."
   },
   {
     name: 'Sara Lee',
     title: 'Travel Blogger',
     img: '/Face2jpeg.jpeg',
-    review: 'Lightweight and easy to use, it fits perfectly in my backpack for every adventure.'
+    review: "Compact and lightweight, the Aureon X4 fits perfectly in my backpack for every adventure."
   },
   {
     name: 'David Kim',
     title: 'Drone Enthusiast',
     img: '/Face3.jpeg',
-    review: 'The 4K HDR video quality is simply stunning. I love sharing my footage online!'
+    review: "The 5K HDR video quality is breathtaking. Sharing my footage online has never looked better!"
   },
   {
     name: 'Anthoine Smith',
     title: 'Content Creator',
     img: '/Face4.jpeg',
-    review: 'ActiveTrack 360° lets me get creative shots without worrying about controls.'
+    review: "AutoPilot MotionTrack lets me get creative shots without worrying about manual control."
   },
   {
     name: 'Carla Mendes',
     title: 'Tech Reviewer',
     img: '/Face5.jpeg',
-    review: 'Impressed by the long battery life and stable connection, even in windy conditions.'
+    review: "Impressed by the long battery life and stable UltraLink HD connection, even in windy conditions."
   },
   {
     name: 'Stephen Brown',
     title: 'Filmmaker',
     img: '/Face.jpeg',
-    review: 'The drone\'s portability and ease of use make it my go-to for quick shoots.'
+    review: "The Aureon X4's portability and ease of use make it my go-to for spontaneous shoots."
   },
 ];
+
 
 export default function Testimonials({ theme = 'dark' }) {
   const [selected, setSelected] = useState(0);

@@ -4,7 +4,7 @@ export default function Hero({ theme = 'dark' }) {
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/d2756ce3-23e9-4087-9eb7-f35fe9c84def.webm" 
+        src="/Techpage.mp4" 
         autoPlay
         loop
         muted
@@ -16,12 +16,12 @@ export default function Hero({ theme = 'dark' }) {
       }`} />
       {/* Content */}
       <div className="relative z-20 w-full">
-        <h1 className="text-5xl font-bold mb-4 text-white">DJI MINI 4 PRO</h1>
-        <p className="text-xl mb-6 text-white">A New Standard for Compact Flight</p>
+        <h1 className="text-5xl font-bold mb-4 text-white">Aureon X4</h1>
+        <p className="text-xl mb-6 text-white">The Sky. Reimagined.</p>
         <p className={`max-w-xl mx-auto mb-8 ${
           theme === 'dark' ? 'text-gray-200' : 'text-gray-100'
         }`}>
-          Advanced technology meets effortless portability. Capture stunning aerial footage with ease.
+         Next-gen engineering meets ultra-light design. Experience smooth, cinematic flight anywhere.  Your creativity, elevated.
         </p>
         <button className={`py-2 px-6 rounded transition-colors text-white ${
           theme === 'dark' 
